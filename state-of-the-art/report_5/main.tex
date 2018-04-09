@@ -1,0 +1,35 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi)
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text.
+\usepackage{fullpage} % changes the margin
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\graphicspath{{images/}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=black,
+}
+
+\begin{document}
+%Header-Make sure you update this information!!!!
+\noindent
+\large\textbf{Report 5} \hfill \textbf{Francisco Maria Calisto} \\
+\normalsize
+Prof. Dr. Jacinto Nascimento \hfill Date: 09/04/2018 \\
+Prof. Dr. Nuno Nunes
+
+\input{sections/problem_statement}
+\input{sections/investigation_research}
+\input{sections/final_evaluation}
+
+\clearpage
+
+\bibliographystyle{plain}
+\bibliography{bibliography/references.bib}
+
+\end{document}
